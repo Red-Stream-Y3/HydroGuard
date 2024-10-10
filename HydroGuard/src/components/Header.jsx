@@ -78,13 +78,16 @@ export default function Example() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="#home" className="-m-1.5 p-1.5">
+              <a href="#home" className="-m-1.5 p-1.5 flex items-center">
                 <span className="sr-only">HydroGuard</span>
                 <img
                   alt="HydroGuard Logo"
                   src="src/assets/favicon.png"
                   className="h-8 w-8"
                 />
+                <span className="text-2xl ml-5 font-bold text-indigo-600">
+                  HydroGuard
+                </span>
               </a>
             </div>
           </div>
