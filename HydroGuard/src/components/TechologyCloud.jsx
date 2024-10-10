@@ -1,6 +1,7 @@
 const technologies = [
   { name: "Arduino", src: "src/assets/technology/arduino.svg" },
   { name: "AWS", src: "src/assets/technology/aws.svg" },
+  { name: "C++", src: "src/assets/technology/c++.svg" },
   { name: "Colab", src: "src/assets/technology/colab.svg" },
   { name: "Docker", src: "src/assets/technology/docker-4.svg" },
   { name: "Express", src: "src/assets/technology/express.svg" },
@@ -10,6 +11,7 @@ const technologies = [
   { name: "Node.js", src: "src/assets/technology/nodejs.svg" },
   { name: "Python", src: "src/assets/technology/python.svg" },
   { name: "React", src: "src/assets/technology/react.svg" },
+  { name: "Tailwind CSS", src: "src/assets/technology/tailwind.svg" },
   { name: "TensorFlow", src: "src/assets/technology/tensorflow.svg" },
   { name: "Vite.js", src: "src/assets/technology/vitejs.svg" },
 ];
