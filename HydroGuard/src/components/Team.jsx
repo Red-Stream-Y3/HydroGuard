@@ -68,7 +68,7 @@ const people = [
 ];
 
 const TeamMember = ({ person }) => (
-  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105 bg-slate-50 p-6 rounded-lg shadow-md bg-opacity-50">
+  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105 bg-slate-50 p-4 lg:p-6 rounded-lg shadow-md bg-opacity-70 lg:bg-opacity-50">
     <img
       className="h-32 w-32 rounded-full object-cover"
       src={person.imageUrl}
@@ -107,7 +107,7 @@ const TeamMember = ({ person }) => (
 
 const Team = () => {
   return (
-    <div className="py-24 sm:py-16">
+    <div className="py-6 lg:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -124,7 +124,7 @@ const Team = () => {
 
         <ul
           role="list"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mt-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 lg:gap-y-12 mt-12"
         >
           {people.slice(0, 4).map((person) => (
             <TeamMember key={person.name} person={person} />
@@ -133,7 +133,7 @@ const Team = () => {
 
         <ul
           role="list"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mt-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 lg:gap-y-12 mt-4 lg:mt-12"
         >
           {people.slice(4).map((person) => (
             <TeamMember key={person.name} person={person} />
