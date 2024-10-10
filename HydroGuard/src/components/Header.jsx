@@ -164,11 +164,12 @@ export default function Example() {
               <div className="space-y-1 py-6">
                 {navigation.map((item) => (
                   <Disclosure as="div" key={item.name} className="-mx-3">
-                    <DisclosureButton
-                      className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ${
+                    <a
+                      href={item.href}
+                      className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-sm font-medium leading-7 ${
                         isCurrent(item)
                           ? "bg-indigo-600 text-white"
-                          : "text-gray-700 hover:bg-gray-200 hover:text-indigo-600"
+                          : "text-gray-900 hover:bg-gray-200 hover:text-indigo-600"
                       }`}
                     >
                       {item.name}
@@ -178,14 +179,14 @@ export default function Example() {
                           className="h-5 w-5 flex-none group-data-[open]:rotate-180"
                         />
                       )}
-                    </DisclosureButton>
+                    </a>
                     {item.subItems && (
                       <DisclosurePanel className="mt-2 space-y-2">
                         {item.subItems.map((subItem) => (
                           <a
                             key={subItem.name}
                             href={subItem.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                           >
                             {subItem.name}
                           </a>
