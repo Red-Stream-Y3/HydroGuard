@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogPanel,
   Disclosure,
-  DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
 import {
@@ -41,7 +40,7 @@ const navigation = [
   { name: "Contact Us", href: "#contact-us" },
 ];
 
-export default function Example() {
+const Header = () => {
   const [current, setCurrent] = useState("#home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -73,7 +72,7 @@ export default function Example() {
     <header className="bg-white shadow">
       <nav
         aria-label="Global"
-        className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
       >
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -202,4 +201,6 @@ export default function Example() {
       </Dialog>
     </header>
   );
-}
+};
+
+export default Header;
