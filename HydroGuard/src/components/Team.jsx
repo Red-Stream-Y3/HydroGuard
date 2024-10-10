@@ -1,4 +1,4 @@
-import { InboxIcon, PaperClipIcon } from "@heroicons/react/24/outline";
+import { AtSymbolIcon, LinkIcon } from "@heroicons/react/24/outline";
 
 const people = [
   {
@@ -76,12 +76,14 @@ const Team = () => {
             Meet our team
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Our team of leaders working across different departments, bringing
-            their expertise and vision.
+            Our dedicated team, composed of undergraduate students and expert
+            supervisors, brings together diverse knowledge and skills to drive
+            innovation and research. Together, we are committed to delivering
+            impactful solutions and advancing the field through collaborative
+            efforts.
           </p>
         </div>
 
-        {/* Top row with 4 members */}
         <ul
           role="list"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mt-12"
@@ -111,13 +113,15 @@ const Team = () => {
                     href={`mailto:${person.email}`}
                     className="text-gray-400 hover:text-gray-500"
                   >
-                    <InboxIcon className="h-5 w-5" aria-hidden="true" />
+                    <AtSymbolIcon className="h-5 w-5" aria-hidden="true" />
                   </a>
                   <a
-                    href={person.linkedIn}
+                    href={person.linkedInUrl}
                     className="text-gray-400 hover:text-gray-500"
+                    target="_blank" // Opens in a new tab
+                    rel="noopener noreferrer" // Security measure
                   >
-                    <PaperClipIcon className="h-5 w-5" aria-hidden="true" />
+                    <LinkIcon className="h-5 w-5" aria-hidden="true" />
                   </a>
                 </div>
               </div>
@@ -125,7 +129,6 @@ const Team = () => {
           ))}
         </ul>
 
-        {/* Bottom row with 3 members */}
         <ul
           role="list"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mt-12"
@@ -155,13 +158,15 @@ const Team = () => {
                     href={`mailto:${person.email}`}
                     className="text-gray-400 hover:text-gray-500"
                   >
-                    <InboxIcon className="h-5 w-5" aria-hidden="true" />
+                    <AtSymbolIcon className="h-5 w-5" aria-hidden="true" />
                   </a>
                   <a
-                    href={person.linkedIn}
+                    href={person.linkedInUrl}
                     className="text-gray-400 hover:text-gray-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <PaperClipIcon className="h-5 w-5" aria-hidden="true" />
+                    <LinkIcon className="h-5 w-5" aria-hidden="true" />
                   </a>
                 </div>
               </div>
