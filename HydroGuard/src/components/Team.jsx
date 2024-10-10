@@ -68,7 +68,7 @@ const people = [
 ];
 
 const TeamMember = ({ person }) => (
-  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105">
+  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105 bg-slate-50 p-6 rounded-lg shadow-md bg-opacity-40">
     <img
       className="h-32 w-32 rounded-full object-cover"
       src={person.imageUrl}
@@ -107,7 +107,7 @@ const TeamMember = ({ person }) => (
 
 const Team = () => {
   return (
-    <div className="bg-slate-100 py-24 sm:py-32">
+    <div className="py-24 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

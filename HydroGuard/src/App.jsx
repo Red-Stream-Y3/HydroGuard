@@ -5,11 +5,12 @@ import TechologyCloud from "./components/TechologyCloud";
 
 function App() {
   return (
-    <>
+    // gradient background
+    <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header />
       <TechologyCloud />
       <Team />
-    </>
+    </div>
   );
 }
 
