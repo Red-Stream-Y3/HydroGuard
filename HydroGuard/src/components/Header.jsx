@@ -78,11 +78,11 @@ export default function Example() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="#home" className="-m-1.5 p-1.5">
                 <span className="sr-only">HydroGuard</span>
                 <img
                   alt="HydroGuard Logo"
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                  src="src/assets/favicon.png"
                   className="h-8 w-8"
                 />
               </a>
