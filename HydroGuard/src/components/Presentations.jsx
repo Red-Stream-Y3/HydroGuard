@@ -2,7 +2,7 @@ import { DocumentTextIcon } from "@heroicons/react/24/outline";
 
 const posts = [
   {
-    title: "Project Proposal Presentation",
+    title: "Proposal Presentation",
     submittedOn: "2024/03/22",
     type: "group",
     downloadLink: "driveLink3",
