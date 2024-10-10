@@ -68,7 +68,7 @@ const people = [
 ];
 
 const TeamMember = ({ person }) => (
-  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105 bg-slate-50 p-6 rounded-lg shadow-md bg-opacity-40">
+  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105 bg-slate-50 p-6 rounded-lg shadow-md bg-opacity-50">
     <img
       className="h-32 w-32 rounded-full object-cover"
       src={person.imageUrl}
