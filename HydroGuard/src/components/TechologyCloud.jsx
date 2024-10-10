@@ -2,7 +2,7 @@ const technologies = [
   { name: "Arduino", src: "src/assets/technology/arduino.svg" },
   { name: "AWS", src: "src/assets/technology/aws.svg" },
   { name: "C++", src: "src/assets/technology/c++.svg" },
-  { name: "Colab", src: "src/assets/technology/colab.svg" },
+  { name: "Google Colab", src: "src/assets/technology/colab.svg" },
   { name: "Docker", src: "src/assets/technology/docker-4.svg" },
   { name: "Express", src: "src/assets/technology/express.svg" },
   { name: "Flask", src: "src/assets/technology/flask.svg" },
@@ -26,14 +26,23 @@ const TechologyCloud = () => {
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Explore the powerful technologies we use to build modern solutions.
         </p>
-        <div className="mx-auto mt-12 grid max-w-lg grid-cols-4 items-center gap-x-12 gap-y-12 sm:max-w-xl sm:grid-cols-6 lg:max-w-none lg:grid-cols-5">
+        <div className="mx-auto mt-12 grid max-w-lg grid-cols-4 items-center gap-x-12 gap-y-12 sm:max-w-xl sm:grid-cols-6 lg:max-w-none lg:grid-cols-6">
           {technologies.map((tech) => (
-            <img
+            <div
+              className="flex flex-col items-center transition-transform duration-300 hover:scale-110"
               key={tech.name}
-              alt={tech.name}
-              src={tech.src}
-              className="col-span-2 max-h-16 w-full object-contain transition-transform duration-300 hover:scale-125 lg:col-span-1"
-            />
+            >
+              <div className="flex items-center justify-center w-24 h-24 rounded-full bg-white shadow-md">
+                <img
+                  alt={tech.name}
+                  src={tech.src}
+                  className="h-14 w-14 object-contain"
+                />
+              </div>
+              <p className="mt-3 text-sm font-medium leading-6 text-gray-900">
+                {tech.name}
+              </p>
+            </div>
           ))}
         </div>
       </div>

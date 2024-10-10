@@ -39,7 +39,7 @@ const people = [
   },
   {
     name: "Mr. Samadhi Rathnayake",
-    title: "Supervior",
+    title: "Supervisor",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Information Technology",
     imageUrl: "src/assets/Samadhi.jpeg",
@@ -67,6 +67,44 @@ const people = [
   },
 ];
 
+const TeamMember = ({ person }) => (
+  <li className="flex flex-col items-center transition-transform duration-300 hover:scale-105">
+    <img
+      className="h-32 w-32 rounded-full object-cover"
+      src={person.imageUrl}
+      alt={person.name}
+    />
+    <div className="mt-6 text-center">
+      <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">
+        {person.name}
+      </h3>
+      <p className="text-sm font-semibold leading-6 text-indigo-600">
+        {person.title}
+      </p>
+      <p className="text-sm leading-6 text-gray-500">{person.organization}</p>
+      <p className="text-sm leading-6 text-gray-500">{person.department}</p>
+      <div className="mt-3 flex justify-center gap-4">
+        {person.email && (
+          <a
+            href={`mailto:${person.email}`}
+            className="text-gray-400 hover:text-gray-500"
+          >
+            <AtSymbolIcon className="h-5 w-5" aria-hidden="true" />
+          </a>
+        )}
+        <a
+          href={person.linkedInUrl}
+          className="text-gray-400 hover:text-gray-500"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkIcon className="h-5 w-5" aria-hidden="true" />
+        </a>
+      </div>
+    </div>
+  </li>
+);
+
 const Team = () => {
   return (
     <div className="bg-slate-100 py-24 sm:py-32">
@@ -88,44 +126,8 @@ const Team = () => {
           role="list"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mt-12"
         >
-          {people.slice(0, 4).map((person, index) => (
-            <li key={index} className="flex flex-col items-center">
-              <img
-                className="h-32 w-32 rounded-full object-cover"
-                src={person.imageUrl}
-                alt={person.name}
-              />
-              <div className="mt-6 text-center">
-                <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">
-                  {person.name}
-                </h3>
-                <p className="text-sm font-semibold leading-6 text-indigo-600">
-                  {person.title}
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  {person.organization}
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  {person.department}
-                </p>
-                <div className="mt-3 flex justify-center gap-4">
-                  <a
-                    href={`mailto:${person.email}`}
-                    className="text-gray-400 hover:text-gray-500"
-                  >
-                    <AtSymbolIcon className="h-5 w-5" aria-hidden="true" />
-                  </a>
-                  <a
-                    href={person.linkedInUrl}
-                    className="text-gray-400 hover:text-gray-500"
-                    target="_blank" // Opens in a new tab
-                    rel="noopener noreferrer" // Security measure
-                  >
-                    <LinkIcon className="h-5 w-5" aria-hidden="true" />
-                  </a>
-                </div>
-              </div>
-            </li>
+          {people.slice(0, 4).map((person) => (
+            <TeamMember key={person.name} person={person} />
           ))}
         </ul>
 
@@ -133,44 +135,8 @@ const Team = () => {
           role="list"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mt-12"
         >
-          {people.slice(4).map((person, index) => (
-            <li key={index} className="flex flex-col items-center">
-              <img
-                className="h-32 w-32 rounded-full object-cover"
-                src={person.imageUrl}
-                alt={person.name}
-              />
-              <div className="mt-6 text-center">
-                <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">
-                  {person.name}
-                </h3>
-                <p className="text-sm font-semibold leading-6 text-indigo-600">
-                  {person.title}
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  {person.organization}
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  {person.department}
-                </p>
-                <div className="mt-3 flex justify-center gap-4">
-                  <a
-                    href={`mailto:${person.email}`}
-                    className="text-gray-400 hover:text-gray-500"
-                  >
-                    <AtSymbolIcon className="h-5 w-5" aria-hidden="true" />
-                  </a>
-                  <a
-                    href={person.linkedInUrl}
-                    className="text-gray-400 hover:text-gray-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LinkIcon className="h-5 w-5" aria-hidden="true" />
-                  </a>
-                </div>
-              </div>
-            </li>
+          {people.slice(4).map((person) => (
+            <TeamMember key={person.name} person={person} />
           ))}
         </ul>
       </div>
