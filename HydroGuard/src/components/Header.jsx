@@ -111,7 +111,7 @@ export default function Example() {
                         <a
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm font-medium"
                         >
                           {subItem.name}
                         </a>
