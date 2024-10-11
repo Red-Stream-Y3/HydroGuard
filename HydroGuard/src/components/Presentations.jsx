@@ -1,4 +1,4 @@
-import { DocumentTextIcon } from "@heroicons/react/24/outline";
+import { PresentationChartLineIcon } from "@heroicons/react/24/outline";
 
 const posts = [
   {
@@ -56,6 +56,7 @@ const Presentations = () => {
                 </span>
               </div>
               <div className="group relative mt-4 flex items-center">
+                <PresentationChartLineIcon className="h-6 w-6 text-indigo-600 mr-3" />
                 <h3 className="text-lg font-semibold leading-6 text-gray-900 group-hover:text-indigo-600">
                   <a
                     href={post.downloadLink}
