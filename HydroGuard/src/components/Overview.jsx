@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div id="overview" className="py-6 lg:py-16">
+    <div id="literature-survey" className="py-6 lg:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Overview of Our Expertise

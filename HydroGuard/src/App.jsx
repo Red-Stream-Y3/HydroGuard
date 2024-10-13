@@ -12,6 +12,7 @@ import Documents from "./components/Documents";
 import Presentations from "./components/Presentations";
 import Team from "./components/Team";
 import ContactUs from "./components/ContactUs";
+import Archievements from "./components/Archievements";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Milestones />
       <Documents />
       <Presentations />
+      <Archievements />
       <Team />
       <ContactUs />
     </div>

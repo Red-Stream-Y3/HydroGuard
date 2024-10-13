@@ -32,7 +32,7 @@ const navigation = [
   {
     name: "Downloads",
     subItems: [
-      { name: "Reports", href: "#reports" },
+      { name: "Documents", href: "#documents" },
       { name: "Presentations", href: "#presentations" },
     ],
   },
