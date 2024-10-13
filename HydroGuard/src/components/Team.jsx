@@ -1,12 +1,20 @@
 import { AtSymbolIcon, LinkIcon } from "@heroicons/react/24/outline";
 
+import sachiniImage from "../assets/Sachini.png";
+import navodImage from "../assets/Navod.jpeg";
+import dinushkaImage from "../assets/Dinushka.jpeg";
+import janinduImage from "../assets/Janindu.jpeg";
+import samadhiImage from "../assets/Samadhi.jpeg";
+import nelumImage from "../assets/Nelum.jpeg";
+import sudathImage from "../assets/Sudath.png";
+
 const people = [
   {
     name: "Sachini Lekamge",
     title: "Group Leader",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
-    imageUrl: "src/assets/Sachini.png",
+    imageUrl: sachiniImage,
     linkedInUrl: "https://www.linkedin.com/in/sachini-lekamge/",
     email: "sachini.lekamge@gmail.com",
   },
@@ -15,7 +23,7 @@ const people = [
     title: "Group Member",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
-    imageUrl: "src/assets/Navod.jpeg",
+    imageUrl: navodImage,
     linkedInUrl: "https://www.linkedin.com/in/navodweerawarna/",
     email: "navodveduth@gmail.com",
   },
@@ -24,7 +32,7 @@ const people = [
     title: "Group Member",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
-    imageUrl: "src/assets/Dinushka.jpeg",
+    imageUrl: dinushkaImage,
     linkedInUrl: "https://www.linkedin.com/in/dinushkasam/",
     email: "dinushkasam@gmail.com",
   },
@@ -33,7 +41,7 @@ const people = [
     title: "Group Member",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Software Engineering",
-    imageUrl: "src/assets/Janindu.jpeg",
+    imageUrl: janinduImage,
     linkedInUrl: "https://www.linkedin.com/in/janindu-dissanayake/",
     email: "janindu001@gmail.com",
   },
@@ -42,7 +50,7 @@ const people = [
     title: "Supervisor",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Information Technology",
-    imageUrl: "src/assets/Samadhi.jpeg",
+    imageUrl: samadhiImage,
     linkedInUrl: "https://www.linkedin.com/in/samadhi-chathuranga-rathnayake/",
     email: "samadhi.r@sliit.lk",
   },
@@ -51,7 +59,7 @@ const people = [
     title: "Co-Supervisor",
     organization: "Sri Lanka Institute of Information Technology",
     department: "Information Technology",
-    imageUrl: "src/assets/Nelum.jpeg",
+    imageUrl: nelumImage,
     linkedInUrl:
       "https://www.linkedin.com/in/nelum-chathuranga-amarasena-703a66176/",
     email: "samadhi.r@sliit.lk",
@@ -61,7 +69,7 @@ const people = [
     title: "External Supervisor",
     organization: "Mahaweli Authority, Sri Lanka",
     department: "Civil Engineering",
-    imageUrl: "src/assets/Sudath.png",
+    imageUrl: sudathImage,
     linkedInUrl: "https://www.linkedin.com/in/sudath-kumara-hewadewa-0a00888a/",
     email: "",
   },
