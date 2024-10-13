@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="py-6 lg:py-16">
+    <div id="home" className="py-6 lg:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative isolate overflow-hidden sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:pt-0">
           <div className=" max-w-md text-center lg:mx-0 lg:flex-auto mx-2 lg:py-32 lg:text-left">
