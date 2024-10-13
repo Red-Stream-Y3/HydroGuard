@@ -1,4 +1,9 @@
-import React from "react";
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
 const Objectives = () => {
   const objectivesList = [
@@ -6,6 +11,25 @@ const Objectives = () => {
       title: "Innovate with Technology",
       description:
         "Utilize emerging technologies and methodologies to develop cutting-edge solutions.",
+      icon: ArrowPathIcon,
+    },
+    {
+      title: "Ensure Data Security",
+      description:
+        "Implement robust security measures to protect sensitive data and ensure user privacy.",
+      icon: LockClosedIcon,
+    },
+    {
+      title: "Prioritize User Experience",
+      description:
+        "Design intuitive and user-friendly interfaces to enhance user engagement and satisfaction.",
+      icon: FingerPrintIcon,
+    },
+    {
+      title: "Promote Sustainability",
+      description:
+        "Adopt sustainable practices and technologies to reduce environmental impact and promote eco-friendliness.",
+      icon: CloudArrowUpIcon,
     },
   ];
 
@@ -19,25 +43,25 @@ const Objectives = () => {
           We are committed to achieving the following objectives as we work
           towards impactful and sustainable solutions.
         </p>
-        <div className="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-x-12 gap-y-12 sm:max-w-xl sm:grid-cols-2 lg:max-w-none lg:grid-cols-3">
-          {objectivesList.map((objective, index) => (
-            <div
-              className="flex flex-col items-center text-center transition-transform duration-300 hover:scale-105"
-              key={index}
-            >
-              <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full bg-gray-200 shadow-md flex items-center justify-center">
-                <span className="text-2xl lg:text-4xl font-bold text-gray-700">
-                  {index + 1}
-                </span>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {objectivesList.map((objective) => (
+              <div key={objective.title} className="relative pl-16">
+                <dt className="text-base font-semibold leading-7 text-gray-900">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <objective.icon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-white"
+                    />
+                  </div>
+                  {objective.title}
+                </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  {objective.description}
+                </dd>
               </div>
-              <h3 className="mt-3 text-lg lg:text-xl font-medium leading-6 text-gray-900">
-                {objective.title}
-              </h3>
-              <p className="mt-2 text-sm lg:text-md text-gray-600">
-                {objective.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </dl>
         </div>
       </div>
     </div>
