@@ -36,9 +36,9 @@ const navigation = [
       { name: "Presentations", href: "#presentations" },
     ],
   },
-  { name: "About Us", href: "#about-us" },
   { name: "Achievements", href: "#achievements" },
-  { name: "Contact Us", href: "#contact-us" },
+  { name: "About Us", href: "#about-us" },
+  // { name: "Contact Us", href: "#contact-us" },
 ];
 
 const Header = () => {
