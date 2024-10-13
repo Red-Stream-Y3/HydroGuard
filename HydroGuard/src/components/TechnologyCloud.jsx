@@ -10,8 +10,11 @@ import mongodbImg from "../assets/technology/mongodb.svg";
 import nodejsImg from "../assets/technology/nodejs.svg";
 import pythonImg from "../assets/technology/python.svg";
 import reactImg from "../assets/technology/react.svg";
+import expoImg from "../assets/technology/expo.svg";
 import tailwindImg from "../assets/technology/tailwind.svg";
+import openCVImg from "../assets/technology/opencv.svg";
 import tensorflowImg from "../assets/technology/tensorflow.svg";
+import kerasImg from "../assets/technology/keras.svg";
 import vitejsImg from "../assets/technology/vitejs.svg";
 
 const technologies = [
@@ -27,8 +30,11 @@ const technologies = [
   { name: "Node.js", src: nodejsImg },
   { name: "Python", src: pythonImg },
   { name: "React", src: reactImg },
+  { name: "Expo", src: expoImg },
   { name: "Tailwind CSS", src: tailwindImg },
+  { name: "OpenCV", src: openCVImg },
   { name: "TensorFlow", src: tensorflowImg },
+  { name: "Keras", src: kerasImg },
   { name: "Vite.js", src: vitejsImg },
 ];
 
