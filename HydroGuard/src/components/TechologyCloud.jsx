@@ -1,19 +1,35 @@
+import arduinoImg from "../assets/technology/arduino.svg";
+import awsImg from "../assets/technology/aws.svg";
+import cppImg from "../assets/technology/c++.svg";
+import colabImg from "../assets/technology/colab.svg";
+import dockerImg from "../assets/technology/docker-4.svg";
+import expressImg from "../assets/technology/express.svg";
+import flaskImg from "../assets/technology/flask.svg";
+import javascriptImg from "../assets/technology/javascript.svg";
+import mongodbImg from "../assets/technology/mongodb.svg";
+import nodejsImg from "../assets/technology/nodejs.svg";
+import pythonImg from "../assets/technology/python.svg";
+import reactImg from "../assets/technology/react.svg";
+import tailwindImg from "../assets/technology/tailwind.svg";
+import tensorflowImg from "../assets/technology/tensorflow.svg";
+import vitejsImg from "../assets/technology/vitejs.svg";
+
 const technologies = [
-  { name: "Arduino", src: "src/assets/technology/arduino.svg" },
-  { name: "AWS", src: "src/assets/technology/aws.svg" },
-  { name: "C++", src: "src/assets/technology/c++.svg" },
-  { name: "Google Colab", src: "src/assets/technology/colab.svg" },
-  { name: "Docker", src: "src/assets/technology/docker-4.svg" },
-  { name: "Express", src: "src/assets/technology/express.svg" },
-  { name: "Flask", src: "src/assets/technology/flask.svg" },
-  { name: "JavaScript", src: "src/assets/technology/javascript.svg" },
-  { name: "MongoDB", src: "src/assets/technology/mongodb.svg" },
-  { name: "Node.js", src: "src/assets/technology/nodejs.svg" },
-  { name: "Python", src: "src/assets/technology/python.svg" },
-  { name: "React", src: "src/assets/technology/react.svg" },
-  { name: "Tailwind CSS", src: "src/assets/technology/tailwind.svg" },
-  { name: "TensorFlow", src: "src/assets/technology/tensorflow.svg" },
-  { name: "Vite.js", src: "src/assets/technology/vitejs.svg" },
+  { name: "Arduino", src: arduinoImg },
+  { name: "AWS", src: awsImg },
+  { name: "C++", src: cppImg },
+  { name: "Google Colab", src: colabImg },
+  { name: "Docker", src: dockerImg },
+  { name: "Express", src: expressImg },
+  { name: "Flask", src: flaskImg },
+  { name: "JavaScript", src: javascriptImg },
+  { name: "MongoDB", src: mongodbImg },
+  { name: "Node.js", src: nodejsImg },
+  { name: "Python", src: pythonImg },
+  { name: "React", src: reactImg },
+  { name: "Tailwind CSS", src: tailwindImg },
+  { name: "TensorFlow", src: tensorflowImg },
+  { name: "Vite.js", src: vitejsImg },
 ];
 
 const TechologyCloud = () => {
