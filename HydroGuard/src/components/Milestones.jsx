@@ -76,31 +76,35 @@ const Milestones = () => {
           Here's a brief timeline of our project's key milestones.
         </p>
         <div className="py-10">
-          {/* timeline */}
-          <div className="relative">
+          <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-2 lg:gap-x-6">
             {milestones.map((milestone, index) => (
-              <div key={index} className="mb-8 pb-3">
-                <div className="flex items-center mb-2">
-                  <div className="bg-indigo-500 rounded-full h-9 w-9 flex items-center justify-center z-50">
-                    <span className="text-sm font-bold text-white">
+              <div
+                key={index}
+                className="flex items-center lg:col-span-2 relative group"
+              >
+                <div className="flex items-center lg:ml-6 z-10">
+                  <div className="flex items-center justify-center w-12 h-12 bg-indigo-500 group-hover:bg-indigo-800 rounded-full group-hover:rounded-none relative transition-all duration-100 transform">
+                    <span className="text-lg font-semibold text-white">
                       {index + 1}
                     </span>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {milestone.title}
-                    </h3>
-                    <p className="text-indigo-600">{milestone.date}</p>
+                    {index !== milestones.length - 1 && (
+                      <div className="absolute left-1/2 transform -translate-x-1/2 bg-indigo-500 group-hover:bg-indigo-700 w-2px top-100 h-250px lg:h-150px transition-colors duration-300"></div>
+                    )}
                   </div>
                 </div>
-                <div className="ml-12">
+
+                <div className="ml-12 bg-white bg-opacity-80 shadow-lg rounded-lg p-6 w-full z-10 transform transition-transform hover:scale-105">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {milestone.title}
+                  </h3>
+                  <p className="text-indigo-600">{milestone.date}</p>
                   <p className="text-gray-700">{milestone.description}</p>
                   <div className="mt-2">
                     <div className="flex items-center">
                       <div className="flex-1">
                         <div className="h-2 bg-gray-200 rounded-full">
                           <div
-                            className="h-2 bg-indigo-500 rounded-full"
+                            className="h-2 bg-indigo-500 rounded-full group-hover:bg-indigo-700"
                             style={{ width: milestone.percentage }}
                           ></div>
                         </div>
@@ -115,10 +119,6 @@ const Milestones = () => {
                 </div>
               </div>
             ))}
-            <div
-              className="border-r-2 border-indigo-500 absolute h-full top-0 z-0 mt-4 "
-              style={{ left: "17px" }}
-            ></div>
           </div>
         </div>
       </div>
