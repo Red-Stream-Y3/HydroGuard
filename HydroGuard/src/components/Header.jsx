@@ -38,7 +38,7 @@ const navigation = [
   },
   { name: "Achievements", href: "#achievements" },
   { name: "About Us", href: "#about-us" },
-  // { name: "Contact Us", href: "#contact-us" },
+  { name: "Contact Us", href: "#contact-us" },
 ];
 
 const Header = () => {
@@ -46,26 +46,38 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isCurrent = (item) => {
-    if (item.href === current) {
-      return true;
-    }
+    if (item.href === current) return true;
     if (item.subItems) {
       return item.subItems.some((subItem) => subItem.href === current);
     }
     return false;
   };
 
+  const handleScroll = () => {
+    const sections = navigation.map((item) => item.href);
+    let scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section) => {
+      const element = document.querySelector(section);
+      if (element) {
+        const offsetTop = element.offsetTop;
+        const offsetHeight = element.offsetHeight;
+
+        if (
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight
+        ) {
+          setCurrent(section);
+        }
+      }
+    });
+  };
+
   useEffect(() => {
-    const handleHashChange = () => {
-      setCurrent(window.location.hash || "#home");
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-
-    handleHashChange();
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
