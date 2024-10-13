@@ -83,7 +83,7 @@ const Milestones = () => {
                 className="flex items-center lg:col-span-2 relative group"
               >
                 <div className="flex items-center lg:ml-6 z-10">
-                  <div className="flex items-center justify-center w-12 h-12 bg-indigo-500 group-hover:bg-indigo-800 rounded-full group-hover:rounded-none relative transition-all duration-100 transform">
+                  <div className="flex items-center justify-center w-12 h-12 bg-indigo-500 group-hover:bg-indigo-700 rounded-full group-hover:rounded-md relative transition-all duration-100 transform">
                     <span className="text-lg font-semibold text-white">
                       {index + 1}
                     </span>

@@ -81,6 +81,20 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrent(window.location.hash || "#home");
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   return (
     <header className="bg-white shadow sticky top-0 z-50">
       <nav
