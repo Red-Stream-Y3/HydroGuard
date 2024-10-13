@@ -6,7 +6,7 @@ import Gap from "./components/Gap";
 import Solution from "./components/Solution";
 import Objectives from "./components/Objectives";
 import Methodology from "./components/Methodology";
-import TechologyCloud from "./components/TechologyCloud";
+import TechnologyCloud from "./components/TechnologyCloud";
 import Milestones from "./components/Milestones";
 import Documents from "./components/Documents";
 import Presentations from "./components/Presentations";
@@ -23,7 +23,7 @@ function App() {
       <Solution />
       <Objectives />
       <Methodology />
-      <TechologyCloud />
+      <TechnologyCloud />
       <Milestones />
       <Documents />
       <Presentations />
