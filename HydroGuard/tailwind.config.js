@@ -9,6 +9,7 @@ export default {
       },
       width: {
         "2px": "2px",
+        "48rem": "48rem",
       },
       inset: {
         100: "100%",
