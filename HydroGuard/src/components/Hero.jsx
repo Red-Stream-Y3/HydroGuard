@@ -1,3 +1,5 @@
+import WebApp from "../assets/web-app-2.png";
+
 const Hero = () => {
   return (
     <div id="home" className="py-6 lg:py-16">
@@ -24,7 +26,7 @@ const Hero = () => {
           <div className="relative h-full">
             <img
               alt="App screenshot"
-              src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
+              src={WebApp}
               width={1824}
               height={1080}
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-gray-100 shadow-md"
