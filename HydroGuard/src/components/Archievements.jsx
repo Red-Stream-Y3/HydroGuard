@@ -1,4 +1,5 @@
 import React from "react";
+import SLASSCOM from "../assets/slasscomAward.jpg";
 
 const Archievements = () => {
   return (
@@ -7,9 +8,15 @@ const Archievements = () => {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Archievements
         </h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          malesuada, justo sit amet posuere aliquet
+        <img
+          src={SLASSCOM}
+          alt="SLASSCOM-Ingenuity-Awards"
+          border="0"
+          className="mt-6"
+        />
+        <p className="mt-6 text-md leading-8 text-gray-600 text-center">
+          SLASSCOM Ingenuity Awards: Best Innovation from{" "}
+          <br className="block sm:hidden" /> North Western province
         </p>
       </div>
     </div>
