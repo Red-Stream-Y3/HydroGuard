@@ -4,7 +4,7 @@ const Gap = () => {
   const researchGapExplanation = {
     title: "Research Gap",
     description:
-      "A research gap refers to an area where there is a lack of information, data, or studies. It identifies opportunities for further investigation and can often lead to groundbreaking discoveries or advancements in the field. Recognizing a research gap is crucial for driving innovation and progress.",
+      "Current dam operations in Sri Lanka rely on manual methods, leading to inefficiencies in water management, flood prevention, and hydroelectric power generation. These methods lack automation in critical areas such as dam gate control and water demand forecasting. Additionally, there are no automated systems for crack detection and analysis in dam structures, nor for predicting energy efficiency based on reservoir conditions. This highlights the need for a smart dam control system that integrates IoT and machine learning technologies to optimize water management, enhance flood prevention, protect against structural damage, and improve energy generation efficiency in Sri Lanka.",
   };
 
   return (
