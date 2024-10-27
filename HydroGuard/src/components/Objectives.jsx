@@ -3,32 +3,32 @@ import {
   DevicePhoneMobileIcon,
   AcademicCapIcon,
   BoltIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 const Objectives = () => {
   const objectivesList = [
     {
-      title: "Integrate Low-Cost IoT",
+      title: 'Integrate Low-Cost IoT',
       description:
-        "Leverage affordable IoT sensors to monitor water levels in real-time, enabling efficient and cost-effective dam management.",
+        'Leverage affordable IoT sensors to monitor water levels in real-time, enabling efficient and cost-effective dam management.',
       icon: DevicePhoneMobileIcon,
     },
     {
-      title: "Flood Control Algorithm",
+      title: 'Flood Control Algorithm',
       description:
-        "Develop an advanced algorithm to predict and control flood risks by releasing water at optimal times, based on weather data and reservoir capacity.",
+        'Develop an advanced algorithm to predict and control flood risks by releasing water at optimal times, based on weather data and reservoir capacity.',
       icon: ArrowPathIcon,
     },
     {
-      title: "Automated Crack Detection",
+      title: 'Automated Crack Detection',
       description:
-        "Implement a smart detection system using image processing and AI to autonomously identify structural cracks, ensuring timely maintenance of dam infrastructure.",
+        'Implement a smart detection system using image processing and computer vision algorithms to autonomously identify structural cracks, ensuring timely maintenance of dam infrastructure.',
       icon: AcademicCapIcon,
     },
     {
-      title: "Optimize Hydropower Generation",
+      title: 'Optimize Hydropower Generation',
       description:
-        "Utilize machine learning models to forecast energy demands and water availability, optimizing the efficiency of hydropower generation.",
+        'Utilize machine learning models to forecast energy demands and water availability, optimizing the efficiency of hydropower generation.',
       icon: BoltIcon,
     },
   ];
