@@ -1,47 +1,47 @@
-import React from 'react';
-import sachiniImage from '../assets/Sachini.png';
-import navodImage from '../assets/Navod.jpeg';
-import dinushkaImage from '../assets/Dinushka.jpeg';
-import janinduImage from '../assets/Janindu.jpeg';
+import React from "react";
+import sachiniImage from "../assets/Sachini.png";
+import navodImage from "../assets/Navod.jpeg";
+import dinushkaImage from "../assets/Dinushka.jpeg";
+import janinduImage from "../assets/Janindu.jpeg";
 
 const items = [
   {
     id: 1,
-    title: 'Dam Gate Automation',
+    title: "Dam Gate Automation",
     description:
-      'The smart dam management system begins with IoT sensors deployed around the dam to monitor real-time environmental and operational metrics, such as water levels, flow rates, and weather conditions. These sensors continuously collect and transmit data to the central system, which is vital for immediate decision-making and for feeding into predictive models.',
+      "The smart dam management system begins with IoT sensors deployed around the dam to monitor real-time environmental and operational metrics, such as water levels, flow rates, and weather conditions. These sensors continuously collect and transmit data to the central system, which is vital for immediate decision-making and for feeding into predictive models.",
     author: {
-      name: 'Sachini Lekamge',
+      name: "Sachini Lekamge",
       imageUrl: sachiniImage,
     },
   },
   {
     id: 2,
-    title: 'Flood Prevention with Pre-releasing',
+    title: "Flood Prevention with Pre-releasing",
     description:
-      'The pre-release algorithm is the critical component of the proposed flood prevention strategy. It is designed to proactively manage reservoir water levels by calculating and executing controlled water releases before the water level reaches a critical threshold. The algorithm operates by predicting future water levels based on various inputs and adjusting the spill amount accordingly in an iterative process, util the desired outcome is achieved. Figure 3 illustrates the step-by-step process of the algorithm.',
+      "The pre-release algorithm is the critical component of the proposed flood prevention strategy. It is designed to proactively manage reservoir water levels by calculating and executing controlled water releases before the water level reaches a critical threshold. The algorithm operates by predicting future water levels based on various inputs and adjusting the spill amount accordingly in an iterative process, util the desired outcome is achieved. Figure 3 illustrates the step-by-step process of the algorithm.",
     author: {
-      name: 'Dinushka Samaranayake',
+      name: "Dinushka Samaranayake",
       imageUrl: dinushkaImage,
     },
   },
   {
     id: 3,
-    title: 'Dam Crack Analysis',
+    title: "Dam Crack Analysis",
     description:
-      'The proposed solution involves developing a mobile application for automated dam crack analysis using convolutional neural networks (CNNs) and image processing algorithms. By enabling users to upload dam crack images, the app aims to enhance the efficiency and accuracy of detecting and analyzing structural defects. This approach addresses the challenges of traditional manual inspections, which are often time-consuming and prone to error. The integration of advanced technologies facilitates swift feature extraction, pattern analysis, and consistent results, empowering dam managers and engineers to identify and prioritize defects effectively, ultimately improving the safety and reliability of dam infrastructure',
+      "The proposed solution involves developing a mobile application for automated dam crack analysis using convolutional neural networks (CNNs) and image processing algorithms. By enabling users to upload dam crack images, the app aims to enhance the efficiency and accuracy of detecting and analyzing structural defects. This approach addresses the challenges of traditional manual inspections, which are often time-consuming and prone to error. The integration of advanced technologies facilitates swift feature extraction, pattern analysis, and consistent results, empowering dam managers and engineers to identify and prioritize defects effectively, ultimately improving the safety and reliability of dam infrastructure",
     author: {
-      name: 'Navod Weerawarna',
+      name: "Navod Weerawarna",
       imageUrl: navodImage,
     },
   },
   {
     id: 4,
-    title: 'Improve Hydro Power Generation',
+    title: "Improve Hydro Power Generation",
     description:
-      'The hydro power generation optimization model is designed to maximize power output while considering various constraints and objectives. The model utilizes historical data, real-time sensor readings, and weather forecasts to predict future water availability and optimize power generation schedules. By incorporating machine learning algorithms, the model continuously learns and adapts to changing conditions, ensuring efficient and sustainable power generation.',
+      "The hydro power generation optimization model is designed to maximize power output while considering various constraints and objectives. The model utilizes historical data, real-time sensor readings, and weather forecasts to predict future water availability and optimize power generation schedules. By incorporating machine learning algorithms, the model continuously learns and adapts to changing conditions, ensuring efficient and sustainable power generation.",
     author: {
-      name: 'Janindu Dissanayake',
+      name: "Janindu Dissanayake",
       imageUrl: janinduImage,
     },
   },
