@@ -53,7 +53,7 @@ const ContactUs = () => {
               type="email"
               name="user_email"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600"
             />
           </div>
           <div>
@@ -61,13 +61,13 @@ const ContactUs = () => {
             <textarea
               name="message"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600"
             />
           </div>
           <button
             type="submit"
             id="button"
-            className="mr-0 ml-auto px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+            className="mr-0 ml-auto px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700"
           >
             {buttonText}
           </button>

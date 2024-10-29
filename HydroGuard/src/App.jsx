@@ -17,7 +17,7 @@ import Archievements from "./components/Archievements";
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="bg-gradient-to-br from-blue-50 to-cyan-100">
       <Header />
       <Hero />
       <Overview />

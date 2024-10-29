@@ -86,7 +86,7 @@ const TeamMember = ({ person }) => (
       <h3 className="text-lg font-semibold leading-7 tracking-tight text-gray-900">
         {person.name}
       </h3>
-      <p className="text-sm font-semibold leading-6 text-indigo-600">
+      <p className="text-sm font-semibold leading-6 text-cyan-600">
         {person.title}
       </p>
       <p className="text-sm leading-6 text-gray-500">{person.organization}</p>

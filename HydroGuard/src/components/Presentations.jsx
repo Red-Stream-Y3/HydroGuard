@@ -49,15 +49,15 @@ const Presentations = () => {
                 </time>
                 <span
                   className={`relative z-10 rounded-full ${
-                    post.type === "group" ? "bg-indigo-400" : "bg-slate-500 bg-"
+                    post.type === "group" ? "bg-cyan-400" : "bg-slate-500 bg-"
                   } px-2 py-1 text-xs text-white scale-95`}
                 >
                   {post.type === "group" ? "Group" : "Individual"}
                 </span>
               </div>
               <div className="group relative mt-4 flex items-center">
-                <PresentationChartLineIcon className="h-6 w-6 text-indigo-600 mr-3" />
-                <h3 className="text-lg font-semibold leading-6 text-gray-900 group-hover:text-indigo-600">
+                <PresentationChartLineIcon className="h-6 w-6 text-cyan-600 mr-3" />
+                <h3 className="text-lg font-semibold leading-6 text-gray-900 group-hover:text-cyan-600">
                   <a
                     href={post.downloadLink}
                     target="_blank"
@@ -70,7 +70,7 @@ const Presentations = () => {
               </div>
               <a
                 href={post.downloadLink}
-                className={`mt-4 inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 ${
+                className={`mt-4 inline-flex items-center text-sm font-medium text-cyan-600 hover:text-cyan-800 ${
                   post.downloadLink === "#"
                     ? "pointer-events-none text-gray-400"
                     : ""
