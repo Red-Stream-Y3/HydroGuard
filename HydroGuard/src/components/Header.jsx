@@ -17,6 +17,7 @@ const navigation = [
   {
     name: "Project Scope",
     subItems: [
+      { name: "Overview", href: "#overview" },
       { name: "Literature Survey", href: "#literature-survey" },
       { name: "Research Gap", href: "#research-gap" },
       {

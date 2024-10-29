@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Overview from "./components/Overview";
+import Literature from "./components/Literature";
 import Gap from "./components/Gap";
 import Solution from "./components/Solution";
 import Objectives from "./components/Objectives";
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <Hero />
       <Overview />
+      <Literature />
       <Gap />
       <Solution />
       <Objectives />
