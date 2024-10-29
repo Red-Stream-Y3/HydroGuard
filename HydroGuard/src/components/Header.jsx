@@ -17,6 +17,7 @@ const navigation = [
   {
     name: "Project Scope",
     subItems: [
+      { name: "Overview", href: "#overview" },
       { name: "Literature Survey", href: "#literature-survey" },
       { name: "Research Gap", href: "#research-gap" },
       {
@@ -54,7 +55,9 @@ const Header = () => {
   };
 
   const handleScroll = () => {
-    const sections = navigation.map((item) => item.href);
+    const sections = navigation.flatMap((item) =>
+      item.subItems ? item.subItems.map((subItem) => subItem.href) : item.href
+    );
     let scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((section) => {
@@ -107,7 +110,7 @@ const Header = () => {
               <a href="#home" className="-m-1.5 p-1.5 flex items-center">
                 <span className="sr-only">HydroGuard</span>
                 <img alt="HydroGuard Logo" src={Logo} className="h-8 w-8" />
-                <span className="text-2xl ml-5 font-bold text-indigo-600">
+                <span className="text-2xl ml-5 font-bold text-cyan-600">
                   HydroGuard
                 </span>
               </a>
@@ -121,8 +124,8 @@ const Header = () => {
                     href={item.href}
                     className={
                       isCurrent(item)
-                        ? "bg-indigo-600 text-white rounded-md px-3 py-2 text-sm font-medium"
-                        : "text-gray-700 hover:bg-gray-200 hover:text-indigo-600 rounded-md px-3 py-2 text-sm font-medium"
+                        ? "bg-cyan-600 text-white rounded-md px-3 py-2 text-sm font-medium"
+                        : "text-gray-700 hover:bg-gray-200 hover:text-cyan-600 rounded-md px-3 py-2 text-sm font-medium"
                     }
                   >
                     {item.name}
@@ -168,7 +171,7 @@ const Header = () => {
               <span className="sr-only">HydroGuard</span>
               <img
                 alt="HydroGuard Logo"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=cyan&shade=600"
                 className="h-8 w-auto"
               />
             </a>
@@ -190,8 +193,8 @@ const Header = () => {
                       href={item.href}
                       className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-sm font-medium leading-7 ${
                         isCurrent(item)
-                          ? "bg-indigo-600 text-white"
-                          : "text-gray-900 hover:bg-gray-200 hover:text-indigo-600"
+                          ? "bg-cyan-600 text-white"
+                          : "text-gray-900 hover:bg-gray-200 hover:text-cyan-600"
                       }`}
                     >
                       {item.name}

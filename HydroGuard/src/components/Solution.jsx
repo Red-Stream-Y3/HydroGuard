@@ -29,7 +29,7 @@ const items = [
     id: 3,
     title: "Dam Crack Analysis",
     description:
-      "The proposed system involves several key steps aimed at developing a mobile application for dam crack analysis. To begin, we utilized React Native for cross-platform mobile app development, ensuring compatibility across different devices and operating systems. The user-friendly interfaces of the mobile app allow users to upload dam crack images, either by selecting from the device's gallery or capturing images using the device's camera. React Native image processing libraries were implemented to enhance the user experience. Furthermore, the app will seamlessly integrate functionalities for users to submit images for analysis within the mobile app interface.",
+      "The proposed solution involves developing a mobile application for automated dam crack analysis using convolutional neural networks (CNNs) and image processing algorithms. By enabling users to upload dam crack images, the app aims to enhance the efficiency and accuracy of detecting and analyzing structural defects. This approach addresses the challenges of traditional manual inspections, which are often time-consuming and prone to error. The integration of advanced technologies facilitates swift feature extraction, pattern analysis, and consistent results, empowering dam managers and engineers to identify and prioritize defects effectively, ultimately improving the safety and reliability of dam infrastructure",
     author: {
       name: "Navod Weerawarna",
       imageUrl: navodImage,

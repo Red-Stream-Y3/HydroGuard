@@ -1,29 +1,35 @@
-import React from "react";
-import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
-  const teamMembers = [
-    {
-      name: "Sachini Lekamge",
-      phone: "+94 760113714",
-      email: "sachini.lekamge@gmail.com",
-    },
-    {
-      name: "Navod Weerawarna",
-      phone: "+94 764441458",
-      email: "navodveduth@gmail.com",
-    },
-    {
-      name: "Dinushka Samaranayake",
-      phone: "+94 776283129",
-      email: "dinushkasam@gmail.com",
-    },
-    {
-      name: "Janindu Dissanayake",
-      phone: "+94 769392692",
-      email: "janindu001@gmail.com",
-    },
-  ];
+  const form = useRef();
+  const [buttonText, setButtonText] = useState("Send Message");
+  const [successMessage, setSuccessMessage] = useState(""); // New state for success message
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setButtonText("Sending...");
+    setSuccessMessage(""); // Clear any existing success message on new submission
+
+    const serviceID = "default_service";
+    const templateID = "template_mou45cj";
+    const publicKey = "2WFJHlVRvYBL8LzOY";
+
+    emailjs
+      .sendForm(serviceID, templateID, form.current, publicKey)
+      .then(() => {
+        setButtonText("Send Message");
+        setSuccessMessage(
+          "Thank you! Your message has been sent successfully."
+        );
+        form.current.reset(); // Clear form after successful submission
+      })
+      .catch((err) => {
+        setButtonText("Send Message");
+        alert(`Failed to send message: ${JSON.stringify(err)}`);
+      });
+  };
 
   return (
     <div id="contact-us" className="py-6 lg:py-16">
@@ -31,52 +37,45 @@ const ContactUs = () => {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact Us
         </h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          We are here to help you. Please reach out to us for any queries or
-          assistance.
-        </p>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 rounded-lg p-6"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                {member.name}
-              </h3>
-              <div className="mt-4">
-                <div className="flex items-center">
-                  <a
-                    href={`tel:${member.phone}`}
-                    className="text-gray-400 hover:text-gray-500"
-                  >
-                    <PhoneIcon className="h-5 w-5 mr-2" aria-hidden="true" />
-                  </a>
-                  <a
-                    href={`tel:${member.phone}`}
-                    className="text-gray-600 hover:text-gray-800"
-                  >
-                    {member.phone}
-                  </a>
-                </div>
-                <div className="flex items-center mt-2">
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="text-gray-400 hover:text-gray-500"
-                  >
-                    <AtSymbolIcon className="h-5 w-5 mr-2" aria-hidden="true" />
-                  </a>
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="text-gray-600 hover:text-gray-800"
-                  >
-                    <span>{member.email}</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <form
+          ref={form}
+          onSubmit={handleSubmit}
+          className="mt-8 space-y-6 bg-white bg-opacity-50 p-10 rounded-lg shadow-lg"
+          id="form"
+        >
+          <p className="text-lg leading-8 text-gray-600">
+            Reach out to us via the form below and we will get back to you as
+            soon as possible.
+          </p>
+          <div>
+            <label className="block text-gray-700">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700">Message</label>
+            <textarea
+              name="message"
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600"
+            />
+          </div>
+          <button
+            type="submit"
+            id="button"
+            className="mr-0 ml-auto px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700"
+          >
+            {buttonText}
+          </button>
+        </form>
+
+        {successMessage && ( // Show success message if it exists
+          <p className="mt-4 text-green-600 font-semibold">{successMessage}</p>
+        )}
       </div>
     </div>
   );

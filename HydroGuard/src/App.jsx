@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Overview from "./components/Overview";
+import Literature from "./components/Literature";
 import Gap from "./components/Gap";
 import Solution from "./components/Solution";
 import Objectives from "./components/Objectives";
@@ -16,10 +17,11 @@ import Archievements from "./components/Archievements";
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="bg-gradient-to-br from-blue-50 to-cyan-100">
       <Header />
       <Hero />
       <Overview />
+      <Literature />
       <Gap />
       <Solution />
       <Objectives />

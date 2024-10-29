@@ -22,7 +22,7 @@ const Objectives = () => {
     {
       title: "Automated Crack Detection",
       description:
-        "Implement a smart detection system using image processing and AI to autonomously identify structural cracks, ensuring timely maintenance of dam infrastructure.",
+        "Implement a smart detection system using image processing and computer vision algorithms to autonomously identify structural cracks, ensuring timely maintenance of dam infrastructure.",
       icon: AcademicCapIcon,
     },
     {
@@ -48,7 +48,7 @@ const Objectives = () => {
             {objectivesList.map((objective) => (
               <div key={objective.title} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-600">
                     <objective.icon
                       aria-hidden="true"
                       className="h-6 w-6 text-white"

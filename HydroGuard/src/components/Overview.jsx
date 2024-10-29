@@ -2,6 +2,8 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  ExclamationTriangleIcon,
+  ChartBarSquareIcon,
 } from "@heroicons/react/20/solid";
 import WebApp from "../assets/web-app-1.png";
 
@@ -9,13 +11,13 @@ const Overview = () => {
   return (
     <div
       className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
-      id="literature-survey"
+      id="overview"
     >
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">
+              <p className="text-base font-semibold leading-7 text-cyan-600">
                 Smart Dam Control
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -41,22 +43,22 @@ const Overview = () => {
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
+                  <ServerIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    className="mt-1 h-5 w-5 flex-none text-cyan-600"
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Predictive Flood Prevention.
+                      Real-time Monitoring.
                     </strong>
-                    Utilizing real-time data and predictive models to
-                    proactively release water and prevent flooding.
+                    Monitors dam conditions in real-time, providing early
+                    warnings and alerts.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon
+                  <CloudArrowUpIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    className="mt-1 h-5 w-5 flex-none text-cyan-600"
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
@@ -67,16 +69,42 @@ const Overview = () => {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon
+                  <LockClosedIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    className="mt-1 h-5 w-5 flex-none text-cyan-600"
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Real-Time Communication.
+                      Predictive Flood Prevention.
                     </strong>
-                    A robust warning system to alert downstream communities,
-                    preventing property loss and road blockages.
+                    Utilizing real-time data and predictive models to
+                    proactively release water and prevent flooding.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <ExclamationTriangleIcon
+                    aria-hidden="true"
+                    className="mt-1 h-5 w-5 flex-none text-cyan-600"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Dam Crack Analysis.
+                    </strong>
+                    Utilizes machine learning to analyze dam cracks and
+                    prioritize maintenance.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <ChartBarSquareIcon
+                    aria-hidden="true"
+                    className="mt-1 h-5 w-5 flex-none text-cyan-600"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Efficient Hydro Power Generation.
+                    </strong>
+                    Optimizes water release for hydro power generation,
+                    increasing efficiency.
                   </span>
                 </li>
               </ul>
@@ -89,10 +117,9 @@ const Overview = () => {
                 Transforming Infrastructure.
               </h2>
               <p className="mt-6">
-                By implementing this system, dam operations can transition from
-                reactive to proactive, safeguarding communities and
-                infrastructure from floods and ensuring optimal water resource
-                management.
+                Using this system, dam operations can transition from reactive
+                to proactive, safeguarding communities and infrastructure from
+                floods and ensuring optimal water resource management.
               </p>
             </div>
           </div>
